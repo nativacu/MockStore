@@ -4,6 +4,10 @@ import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
   {
+    path: '',
+    component: HomeComponent
+  },
+  {
     path: 'home',
     component: HomeComponent
   },
@@ -12,6 +16,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('remoteapp1/ProductsModule').then(m => m.ProductsModule)
   },
+  {
+    path: 'profile',
+    loadChildren: () =>
+      import('remoteapp2/ProfileModule').then(m => m.ProfileModule)
+  }
 ];
 
 @NgModule({
