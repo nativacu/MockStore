@@ -1,47 +1,55 @@
-<main>
-  <div class="container mt-4">
-    <h1>Welcome to the Game Store!</h1>
-    <p>Explore our wide selection of video games and find your favorites.</p>
-    <div class="row">
-      <div class="col-md-6">
-        <h2>Featured Games</h2>
-        <ul>
-          <li>
-            <a [routerLink]="['/products/games', '20']">
-              The Legend of Zelda: Breath of the Wild
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/products/games', '2']">
-              Red Dead Redemption 2
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/products/games', '10']">
-              Call of Duty: Modern Warfare
-            </a>
-          </li>
-        </ul>
+<main class="home">
+  <div class="container">
+    <div class="jumbotron fluid-jumbotron mb-4">
+      <div class="container">
+        <h1 class="display-4">Welcome to the Game Store!</h1>
+        <p class="lead">Explore our wide selection of video games and find your favorites.</p>
       </div>
-      <div class="col-md-6">
-        <h2>Latest Releases</h2>
-        <ul>
-          <li>
-            <a [routerLink]="['/products/games', '11']">
-              FIFA 22
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/products/games', '11']">
-              Assassin's Creed Valhalla
-            </a>
-          </li>
-          <li>
-            <a [routerLink]="['/products/games', '11']">
-              Super Mario Odyssey
-            </a>
-          </li>
-        </ul>
+    </div>
+    <div class="card p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Featured Games</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '20']">
+                  The Legend of Zelda: Breath of the Wild
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '2']">
+                  Red Dead Redemption 2
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '10']">
+                  Call of Duty: Modern Warfare
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h2>Latest Releases</h2>
+            <ul class="list-group">
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '11']">
+                  FIFA 22
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '9']">
+                  Assassin's Creed Valhalla
+                </a>
+              </li>
+              <li class="list-group-item">
+                <a [routerLink]="['/products/games', '13']">
+                  Super Mario Odyssey
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
