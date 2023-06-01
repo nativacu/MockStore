@@ -3,9 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from "./home/home.component";
 
 const routes: Routes = [
-  {path: 'home', component: HomeComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path: 'products', loadChildren: () => import('remoteapp1/ProductsModule').then(m => m.ProductsModule)},
+  {
+    path: 'home',
+    component: HomeComponent
+  },
+  {
+    path: 'products',
+    loadChildren: () =>
+      import('remoteapp1/ProductsModule').then(m => m.ProductsModule)
+  },
 ];
 
 @NgModule({
