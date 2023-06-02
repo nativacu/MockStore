@@ -21,7 +21,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('remoteapp2/ProfileModule').then(m => m.ProfileModule)
   },
-  { path: '**', pathMatch: 'full', redirectTo: 'home' }
+  { path: '**', pathMatch: 'full', component: HomeComponent }
 ];
 
 @NgModule({
