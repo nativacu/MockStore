@@ -1,5 +1,13 @@
 # MockStore
 
+This project is a demo to test some of the micro-frontends capabilities using angular. This is the 'shell' project. The complete project consists of three parts.
+
+Games micro-frontend found at https://github.com/nativacu/games-micro-front
+
+Profile micro-frontend found at https://github.com/nativacu/profile-micro-front
+
+And Profile 14 micro-frontend found at https://github.com/nativacu/profile14-micro-front
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
 
 ## Development server
