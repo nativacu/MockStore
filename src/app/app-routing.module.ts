@@ -26,8 +26,8 @@ const routes: Routes = [
     path: 'profile-v14',
     component: WebComponentWrapper,
     data: {
-      // remoteEntry: "http://localhost:4204/remoteEntry.js",
-        remoteEntry: 'https://scintillating-madeleine-31e054.netlify.app/remoteEntry.js',
+        remoteEntry: "http://localhost:4204/remoteEntry.js",
+        // remoteEntry: 'https://scintillating-madeleine-31e054.netlify.app/remoteEntry.js',
         remoteName: 'remoteapp3',
         exposedModule: './web-components',
 
